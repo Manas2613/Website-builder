@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebBuddy | Luxury Business Solutions</title>
+  <meta name="description" content="WebBuddy - Premium business website solutions with flexible plans." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Web<span>Buddy</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="tag">Luxury Business Experience</span>
+        <h1>Premium Digital Growth for Modern Brands</h1>
+        <p>
+          WebBuddy helps businesses stand out with high-end design, strategic support,
+          and results-driven digital solutions tailored for ambitious teams.
+        </p>
+        <div class="hero-actions">
+          <a href="#plans" class="btn btn-primary">View Plans</a>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal">
+        <h3>Why WebBuddy?</h3>
+        <ul class="hero-list">
+          <li>Elegant and conversion-focused website solutions</li>
+          <li>Fast setup for startups and growing businesses</li>
+          <li>Flexible plans from free to premium services</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Our Services</h2>
+      <p class="section-sub reveal">
+        We provide complete digital support to help your business scale with confidence.
+      </p>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <h4>Website Strategy</h4>
+          <p>We craft clear digital roadmaps that align your brand, audience, and business goals.</p>
+        </article>
+        <article class="service-card reveal">
+          <h4>Premium Web Design</h4>
+          <p>Luxury-focused, responsive designs that look stunning and perform beautifully.</p>
+        </article>
+        <article class="service-card reveal">
+          <h4>Growth Optimization</h4>
+          <p>Improve conversions with performance tuning, UX enhancements, and smart content flow.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="container">
+      <h2 class="section-title reveal">Choose Your Plan</h2>
+      <p class="section-sub reveal">Start free, then scale as your business grows.</p>
+
+      <div class="plans-grid">
+        <article class="plan reveal">
+          <h3>Free Plan</h3>
+          <p class="price">$0 <span>/month</span></p>
+          <ul>
+            <li>Basic website setup</li>
+            <li>Email support</li>
+            <li>Starter templates</li>
+          </ul>
+          <a class="btn btn-secondary" href="website-brief.html">Start Free</a>
+        </article>
+
+        <article class="plan popular reveal">
+          <span class="badge">POPULAR</span>
+          <h3>Pro Plan</h3>
+          <p class="price">$1.99 <span>/month</span></p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Premium sections & styling</li>
+            <li>Priority email support</li>
+          </ul>
+          <a class="btn btn-primary" href="checkout.html?plan=pro">Choose Pro</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3>Plus Plan</h3>
+          <p class="price">$4.99 <span>/month</span></p>
+          <ul>
+            <li>Everything in Pro</li>
+            <li>Advanced customization</li>
+            <li>Dedicated business support</li>
+          </ul>
+          <a class="btn btn-primary" href="checkout.html?plan=plus">Choose Plus</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Contact WebBuddy</h2>
+      <p class="section-sub reveal">Have a project in mind? Let’s build something exceptional.</p>
+
+      <div class="contact-wrap">
+        <article class="contact-card reveal">
+          <h3>Let’s Talk Business</h3>
+          <p>Email: hello@webbuddy.com</p>
+          <p>Phone: +1 (555) 010-2026</p>
+          <p>Location: New York, USA</p>
+          <p class="mini-note">Response time: usually within 24 hours.</p>
+        </article>
+
+        <div class="contact-form reveal">
+          <form id="contactForm">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+            <textarea placeholder="Tell us about your project..." required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+          <p class="mini-note" id="formMessage"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> WebBuddy. All rights reserved.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

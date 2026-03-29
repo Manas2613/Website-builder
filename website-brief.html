@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebBuddy | Free Plan Website Brief</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Web<span>Buddy</span></a>
+      <ul class="nav-links" style="display:flex">
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="section-title">Tell us about your website</h1>
+      <p class="section-sub">Complete this brief and we’ll generate a custom starter website preview for your business.</p>
+
+      <div class="panel">
+        <form id="briefForm" class="brief-form">
+          <input name="businessName" type="text" placeholder="Business / Website Name" required />
+          <input name="websiteType" type="text" placeholder="Website Type (e.g. business, portfolio)" required />
+          <select name="tone" required>
+            <option value="">Select tone</option>
+            <option>Luxury</option>
+            <option>Modern</option>
+            <option>Minimal</option>
+            <option>Playful</option>
+            <option>Corporate</option>
+          </select>
+          <input name="colors" type="text" placeholder="Preferred colors (e.g. black, gold, cream)" required />
+          <input name="sections" type="text" placeholder="Sections needed (comma separated)" required />
+          <input name="features" type="text" placeholder="Features needed (e.g. booking form, animations, chat)" required />
+          <input name="headline" type="text" placeholder="Homepage headline" required />
+          <textarea name="description" placeholder="Describe your business, target audience, and goals" required></textarea>
+          <button class="btn btn-primary" type="submit">Generate My Website</button>
+          <p class="mini-note">By continuing, you agree to share this brief for website generation.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
