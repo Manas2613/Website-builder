@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebBuddy | Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Web<span>Buddy</span></a>
+      <ul class="nav-links" style="display:flex">
+        <li><a href="index.html#plans">Back to Plans</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container" style="max-width:700px;">
+      <div class="panel">
+        <h2 id="planTitle" class="section-title">Plan Checkout</h2>
+        <p class="section-sub">Secure checkout placeholder for your selected premium plan.</p>
+        <p><strong>Amount:</strong> <span id="planPrice"></span></p>
+        <form class="brief-form" style="margin-top:1rem;">
+          <input type="text" placeholder="Cardholder name" required>
+          <input type="text" placeholder="Card number" required>
+          <div class="twocol">
+            <input type="text" placeholder="MM/YY" required>
+            <input type="text" placeholder="CVC" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Pay Now</button>
+          <p class="mini-note">Demo checkout UI only. Connect Stripe/PayPal in production.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
